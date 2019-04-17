@@ -1,5 +1,6 @@
 // === FROM EXTERNAL FILES === //
 var express            =  require( 'express' );
+var cors 			   =  require( 'cors' );
 var http               =  require( 'http' );
 var bodyParser         =  require( 'body-parser' );
 var passport           =  require( 'passport' );
@@ -26,6 +27,7 @@ app.use( bodyParser.urlencoded( { extended : false } ) );
 app.use( passport.initialize( ) );
 
 // === CREATE ROUTER === //
+app.use(cors());
 var router  =  express.Router( );
 
 // === CUSTOM FUNCTION TO GENERATE RETURN MESSAGE FOR BAD ROUTES === //
