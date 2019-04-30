@@ -24,9 +24,11 @@ var movieSchema  =  new Schema({
 							items    :	{
 											actorName     : String,
 											characterName : String
+											
 										},
 							minItems : 3
-						}
+						},
+		imageUrl     :  String
 	});
 	
 // === CREATE THE USER MODEL === //

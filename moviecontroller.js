@@ -30,7 +30,8 @@ exports.getMovies =
 																actors: 2,
 																yearReleased:3,
 																genre:4,
-																reviews:'$reviews'
+																reviews:'$reviews',
+																imageUrl:5
 															}
 											}
 										]);
